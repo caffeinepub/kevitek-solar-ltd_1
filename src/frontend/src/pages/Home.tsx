@@ -154,7 +154,7 @@ export default function Home() {
         <div className="relative z-10 container mx-auto px-4 py-24">
           <div className="max-w-2xl">
             <div className="inline-block bg-solar-yellow/20 border border-solar-yellow/40 text-solar-yellow text-xs font-semibold px-3 py-1 rounded-full mb-6 uppercase tracking-wider">
-              ISO 9001:2015 Certified Manufacturer
+              Certified Solar Panel Manufacturer — Est. 2026
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
               Powering India with High-Performance Solar Panels
@@ -187,7 +187,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              "ISO 9001:2015 Certified",
+              "Est. 2026",
               "25+ Year Warranty",
               "High Efficiency Panels",
               "Pan India Supply",
@@ -253,12 +253,7 @@ export default function Home() {
                 industrial contracts.
               </p>
               <div className="flex flex-wrap gap-3">
-                {[
-                  "ISO 9001:2015",
-                  "IEC 61215",
-                  "IEC 61730",
-                  "BIS Certified",
-                ].map((cert) => (
+                {["IEC 61215", "IEC 61730", "BIS Certified"].map((cert) => (
                   <span
                     key={cert}
                     className="bg-navy text-white text-xs font-semibold px-3 py-1.5 rounded-full"
