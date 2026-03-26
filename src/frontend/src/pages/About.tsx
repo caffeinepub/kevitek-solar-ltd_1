@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 const stats = [
   { value: "500+ MW", label: "Annual Capacity" },
-  { value: "10+ Years", label: "Experience" },
+  { value: "Est. 2026", label: "Founded" },
   { value: "5000+", label: "Installations" },
   { value: "Pan India", label: "Presence" },
 ];
@@ -44,8 +44,8 @@ export default function About() {
             About Kevitek Solar Ltd
           </h1>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            A decade of manufacturing excellence, powering India's solar
-            revolution from Nellore, Andhra Pradesh.
+            Manufacturing excellence, powering India's solar revolution from
+            Nellore, Andhra Pradesh.
           </p>
         </div>
       </section>
@@ -57,11 +57,10 @@ export default function About() {
             <div>
               <h2 className="text-3xl font-bold text-navy mb-6">Our Story</h2>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Founded over a decade ago, Kevitek Solar Ltd has grown from a
-                regional supplier to one of India's most trusted solar panel
-                manufacturers. Based in Nellore, Andhra Pradesh, we combine
-                cutting-edge technology with deep industry expertise to deliver
-                premium quality solar panels.
+                Kevitek Solar Ltd has grown to become one of India's most
+                trusted solar panel manufacturers. Based in Nellore, Andhra
+                Pradesh, we combine cutting-edge technology with deep industry
+                expertise to deliver premium quality solar panels.
               </p>
               <p className="text-gray-600 leading-relaxed mb-4">
                 Our manufacturing facility operates at 500+ MW annual capacity,
@@ -70,10 +69,9 @@ export default function About() {
                 businesses across every state in India.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                Backed by international certifications including ISO 9001:2015,
-                IEC 61215, IEC 61730, and BIS, our panels are engineered to
-                perform in India's diverse climatic conditions — from the arid
-                deserts of Rajasthan to the tropical coasts of Kerala.
+                Our panels are engineered to perform in India's diverse climatic
+                conditions — from the arid deserts of Rajasthan to the tropical
+                coasts of Kerala.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-5">

@@ -3,66 +3,129 @@ import { useEffect } from "react";
 
 const products = [
   {
-    name: "Mono PERC Solar Panels",
-    tagline: "Premium Efficiency for Every Watt",
-    desc: "Mono PERC (Passivated Emitter and Rear Cell) panels are our flagship product offering the highest conversion efficiency. Ideal for space-constrained rooftops and premium installations.",
+    name: "20W Solar Panel",
+    tagline: "Compact & Portable Power",
+    desc: "Ideal for small appliances, portable devices, and off-grid lighting. Perfect for rural households and mobile charging solutions.",
     specs: [
-      "Efficiency: 18–22%",
-      "Power Range: 350W–450W",
+      "Power Output: 20W",
+      "Efficiency: Up to 18%",
       "Warranty: 25 Years Linear Power",
-      "Anti-reflective coating",
+      "Lightweight & portable design",
       "Low light performance optimized",
-      "Temperature coefficient: -0.35%/°C",
+      "Durable tempered glass",
     ],
-    badge: "Best Seller",
+    badge: "Available Now",
   },
   {
-    name: "Polycrystalline Panels",
-    tagline: "Cost-Effective & Reliable",
-    desc: "Our polycrystalline panels offer the best value-for-money proposition. Proven technology with decades of field reliability, ideal for large-scale projects where cost efficiency matters.",
+    name: "30W Solar Panel",
+    tagline: "Rural Electrification Ready",
+    desc: "Perfect for rural electrification, small pumps, and low-power systems. Widely used in government rural energy schemes.",
     specs: [
-      "Efficiency: 15–18%",
-      "Power Range: 250W–370W",
-      "Warranty: 25 Years",
-      "Cost-effective solution",
-      "Excellent for large-scale projects",
-      "Low degradation rate",
+      "Power Output: 30W",
+      "Efficiency: Up to 18%",
+      "Warranty: 25 Years Linear Power",
+      "Robust frame for outdoor use",
+      "Anti-corrosion aluminium frame",
+      "UV resistant encapsulant",
     ],
-    badge: "Value Choice",
+    badge: "Available Now",
   },
   {
-    name: "High Wattage Panels",
-    tagline: "Maximum Power for Maximum Scale",
-    desc: "Engineered for commercial and industrial applications requiring high output from fewer panels. Reduce BOS (Balance of System) costs while maximizing energy generation per square foot.",
+    name: "40W Solar Panel",
+    tagline: "Versatile Mid-Range",
+    desc: "Versatile mid-range panel for telecom towers, security systems, and small homes. Great for off-grid and hybrid systems.",
     specs: [
-      "Power Range: 400W–600W",
-      "Efficiency: up to 21.5%",
-      "Commercial grade construction",
-      "Reduced installation footprint",
-      "Lower LCOE for large projects",
-      "IEC certified",
+      "Power Output: 40W",
+      "Efficiency: Up to 18.5%",
+      "Warranty: 25 Years Linear Power",
+      "Suitable for telecom & CCTV",
+      "Low temperature coefficient",
+      "Salt mist & ammonia resistant",
     ],
-    badge: "Commercial Grade",
+    badge: "Available Now",
   },
   {
-    name: "Bifacial Solar Panels",
-    tagline: "Double the Surface, Double the Power",
-    desc: "Bifacial panels capture sunlight from both front and rear surfaces, delivering up to 30% additional energy output. Perfect for ground-mounted and elevated rooftop installations.",
+    name: "50W Solar Panel",
+    tagline: "Off-Grid Solar Kit Essential",
+    desc: "Widely used in off-grid solar kits, water heaters, and mobile charging. A popular choice for small home energy systems.",
     specs: [
-      "Rear gain: up to 30% additional",
-      "Efficiency: up to 22.8%",
-      "Dual-sided glass construction",
-      "Excellent for ground-mount",
-      "Long service life 30+ years",
-      "Premium commercial/industrial grade",
+      "Power Output: 50W",
+      "Efficiency: Up to 19%",
+      "Warranty: 25 Years Linear Power",
+      "Compatible with 12V battery",
+      "Bypass diode for shade tolerance",
+      "IEC standard construction",
     ],
-    badge: "Premium",
+    badge: "Available Now",
+  },
+  {
+    name: "60W Solar Panel",
+    tagline: "Enhanced Mid-Range Output",
+    desc: "Ideal for solar street lights, medium off-grid setups, and moderate residential applications. Reliable and efficient for varied uses.",
+    specs: [
+      "Power Output: 60W",
+      "Efficiency: Up to 19.5%",
+      "Warranty: 25 Years Linear Power",
+      "Ideal for street lighting",
+      "Robust junction box protection",
+      "Wind load resistant frame",
+    ],
+    badge: "Available Now",
+  },
+  {
+    name: "80W Solar Panel",
+    tagline: "High-Value Performance",
+    desc: "High-value panel for home energy systems, agri-pumps, and commercial setups. Excellent efficiency and output for demanding applications.",
+    specs: [
+      "Power Output: 80W",
+      "Efficiency: Up to 19.8%",
+      "Warranty: 25 Years Linear Power",
+      "Ideal for home & agri systems",
+      "High conversion efficiency",
+      "Excellent for bulk orders",
+    ],
+    badge: "Available Now",
+  },
+  {
+    name: "100W Solar Panel",
+    tagline: "Our Flagship 100W Panel",
+    desc: "Our flagship 100W panel for home systems, agri-pumps, and commercial use. The most versatile panel in our range with maximum output.",
+    specs: [
+      "Power Output: 100W",
+      "Efficiency: Up to 20%",
+      "Warranty: 25 Years Linear Power",
+      "Ideal for home & agri-pumps",
+      "High conversion efficiency",
+      "Excellent for bulk orders",
+    ],
+    badge: "Available Now",
   },
 ];
 
+function SpecIcon() {
+  return (
+    <svg
+      aria-hidden="true"
+      width="14"
+      height="14"
+      viewBox="0 0 14 14"
+      fill="none"
+    >
+      <circle cx="7" cy="7" r="7" fill="#F2C230" fillOpacity="0.2" />
+      <path
+        d="M3.5 7l2.5 2.5L10.5 5"
+        stroke="#F2C230"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
 export default function Products() {
   useEffect(() => {
-    document.title = "Solar Panel Products — Kevitek Solar Ltd";
+    document.title = "20W to 100W Solar Panels — Kevitek Solar Ltd";
   }, []);
 
   return (
@@ -70,13 +133,35 @@ export default function Products() {
       {/* Hero */}
       <section className="bg-navy py-20">
         <div className="container mx-auto px-4 text-center">
+          <div className="inline-block bg-solar-yellow/20 border border-solar-yellow/40 text-solar-yellow text-xs font-semibold px-3 py-1 rounded-full mb-4 uppercase tracking-wider">
+            20W to 100W Range
+          </div>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Our Solar Panel Products
           </h1>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            Four types of high-performance solar panels engineered for every
-            application and budget.
+            Specialized manufacturer and supplier of 20W to 100W solar panels
+            for every application.
           </p>
+        </div>
+      </section>
+
+      {/* Wattage Range Bar */}
+      <section className="bg-solar-yellow py-5">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-wrap items-center justify-center gap-4 md:gap-8">
+            {["20W", "30W", "40W", "50W", "60W", "80W", "100W"].map((w) => (
+              <span
+                key={w}
+                className="bg-navy text-white font-bold text-sm px-4 py-2 rounded-full"
+              >
+                {w}
+              </span>
+            ))}
+            <span className="text-navy font-semibold text-sm">
+              — All Available in Stock
+            </span>
+          </div>
         </div>
       </section>
 
@@ -114,28 +199,7 @@ export default function Products() {
                         key={spec}
                         className="flex items-center gap-2 text-sm text-gray-600"
                       >
-                        <svg
-                          aria-hidden="true"
-                          width="14"
-                          height="14"
-                          viewBox="0 0 14 14"
-                          fill="none"
-                        >
-                          <circle
-                            cx="7"
-                            cy="7"
-                            r="7"
-                            fill="#F2C230"
-                            fillOpacity="0.2"
-                          />
-                          <path
-                            d="M3.5 7l2.5 2.5L10.5 5"
-                            stroke="#F2C230"
-                            strokeWidth="1.5"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                        </svg>
+                        <SpecIcon />
                         {spec}
                       </li>
                     ))}
@@ -158,18 +222,19 @@ export default function Products() {
       <section className="py-16 bg-navy">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
-            Need Custom Specifications?
+            Bulk Supply of 20W to 100W Solar Panels
           </h2>
           <p className="text-gray-300 mb-8 max-w-xl mx-auto">
-            Our team can customize panel specifications for large-scale and OEM
-            requirements.
+            We supply the full 20W–100W range in bulk to dealers, distributors,
+            contractors, and businesses across India. Get factory-direct pricing
+            today.
           </p>
           <Link
             to="/contact"
             data-ocid="products.primary_button"
             className="inline-block bg-solar-yellow text-navy font-semibold px-10 py-4 rounded-md hover:bg-solar-yellow-hover transition-colors"
           >
-            Discuss Your Requirements
+            Discuss Bulk Requirements
           </Link>
         </div>
       </section>

@@ -19,37 +19,21 @@ export default function Header() {
 
   return (
     <header className="bg-white sticky top-0 z-50 shadow-sm">
-      <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-        {/* Logo */}
+      <div className="container mx-auto px-4 h-28 flex items-center justify-between">
+        {/* Logo + Company Name */}
         <Link
           to="/"
-          className="flex items-center gap-2"
+          className="flex items-center gap-3"
           data-ocid="header.link"
         >
-          <svg
-            aria-hidden="true"
-            width="36"
-            height="36"
-            viewBox="0 0 36 36"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="18" cy="18" r="8" fill="#F2C230" />
-            <g stroke="#F2C230" strokeWidth="2.5" strokeLinecap="round">
-              <line x1="18" y1="2" x2="18" y2="6" />
-              <line x1="18" y1="30" x2="18" y2="34" />
-              <line x1="2" y1="18" x2="6" y2="18" />
-              <line x1="30" y1="18" x2="34" y2="18" />
-              <line x1="6.34" y1="6.34" x2="9.17" y2="9.17" />
-              <line x1="26.83" y1="26.83" x2="29.66" y2="29.66" />
-              <line x1="29.66" y1="6.34" x2="26.83" y2="9.17" />
-              <line x1="9.17" y1="26.83" x2="6.34" y2="29.66" />
-            </g>
-          </svg>
-          <div className="leading-tight">
-            <span className="font-bold text-lg text-navy">Kevitek Solar</span>
-            <span className="text-xs text-gray-500 ml-1">Ltd</span>
-          </div>
+          <img
+            src="/assets/uploads/img_4287-019d282e-40a3-7099-8487-1fadc4124aed-1.jpeg"
+            alt="Kevitek Solar Ltd"
+            className="h-24 w-auto object-contain"
+          />
+          <span className="text-navy font-bold text-base tracking-wide whitespace-nowrap">
+            Kevitek Solar Ltd.
+          </span>
         </Link>
 
         {/* Desktop Nav */}

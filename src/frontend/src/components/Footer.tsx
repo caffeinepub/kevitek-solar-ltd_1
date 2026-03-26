@@ -2,8 +2,6 @@ import { Link } from "@tanstack/react-router";
 
 export default function Footer() {
   const year = new Date().getFullYear();
-  const hostname =
-    typeof window !== "undefined" ? window.location.hostname : "";
 
   return (
     <footer className="bg-navy text-white">
@@ -11,27 +9,17 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Company */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <svg
-                aria-hidden="true"
-                width="32"
-                height="32"
-                viewBox="0 0 36 36"
-                fill="none"
-              >
-                <circle cx="18" cy="18" r="8" fill="#F2C230" />
-                <g stroke="#F2C230" strokeWidth="2.5" strokeLinecap="round">
-                  <line x1="18" y1="2" x2="18" y2="6" />
-                  <line x1="18" y1="30" x2="18" y2="34" />
-                  <line x1="2" y1="18" x2="6" y2="18" />
-                  <line x1="30" y1="18" x2="34" y2="18" />
-                  <line x1="6.34" y1="6.34" x2="9.17" y2="9.17" />
-                  <line x1="26.83" y1="26.83" x2="29.66" y2="29.66" />
-                  <line x1="29.66" y1="6.34" x2="26.83" y2="9.17" />
-                  <line x1="9.17" y1="26.83" x2="6.34" y2="29.66" />
-                </g>
-              </svg>
-              <span className="font-bold text-lg">Kevitek Solar Ltd</span>
+            <div className="flex items-center gap-3 mb-4">
+              <div className="bg-white rounded p-1.5 inline-flex">
+                <img
+                  src="/assets/uploads/img_4287-019d282e-40a3-7099-8487-1fadc4124aed-1.jpeg"
+                  alt="Kevitek Solar Ltd"
+                  className="h-20 w-auto object-contain"
+                />
+              </div>
+              <span className="text-white font-bold text-base tracking-wide whitespace-nowrap">
+                Kevitek Solar Ltd.
+              </span>
             </div>
             <p className="text-gray-300 text-sm leading-relaxed mb-5">
               India's trusted manufacturer and supplier of high-performance
@@ -208,17 +196,6 @@ export default function Footer() {
 
         <div className="border-t border-white/10 mt-10 pt-6 flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-gray-400">
           <p>© {year} Kevitek Solar Ltd. All rights reserved.</p>
-          <p>
-            Built with love using{" "}
-            <a
-              href={`https://caffeine.ai?utm_source=caffeine-footer&utm_medium=referral&utm_content=${encodeURIComponent(hostname)}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-white transition-colors"
-            >
-              caffeine.ai
-            </a>
-          </p>
         </div>
       </div>
     </footer>

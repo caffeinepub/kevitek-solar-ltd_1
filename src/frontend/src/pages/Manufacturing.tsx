@@ -25,7 +25,7 @@ const steps = [
   {
     num: 5,
     title: "Quality Testing",
-    desc: "100% panels undergo flash testing, EL imaging, and thermal cycling to meet IEC and BIS standards.",
+    desc: "100% panels undergo flash testing, EL imaging, and thermal cycling to meet the highest industry standards.",
   },
   {
     num: 6,
@@ -65,16 +65,8 @@ export default function Manufacturing() {
   return (
     <div>
       {/* Hero */}
-      <section
-        className="relative py-28"
-        style={{
-          backgroundImage:
-            "url('/assets/generated/manufacturing-facility.dim_800x500.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="absolute inset-0 bg-navy/80" />
+      <section className="relative py-28 bg-navy">
+        <div className="absolute inset-0 bg-navy/90" />
         <div className="relative z-10 container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Manufacturing Excellence
@@ -83,6 +75,47 @@ export default function Manufacturing() {
             500+ MW annual production capacity. Built on precision, automation,
             and unwavering quality standards.
           </p>
+        </div>
+      </section>
+
+      {/* Factory / Machinery Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold text-navy mb-3">
+              Our Machinery — Kevitek Solar
+            </h2>
+            <p className="text-gray-500 max-w-xl mx-auto">
+              State-of-the-art automated machinery at Kevitek Solar's production
+              facility, delivering precision-engineered solar panels at scale.
+            </p>
+          </div>
+          <div className="rounded-2xl overflow-hidden shadow-2xl border border-gray-100">
+            <img
+              src="/assets/generated/factory-machinery-kevitek.dim_1200x700.jpg"
+              alt="Kevitek Solar — Manufacturing Machinery"
+              className="w-full object-cover"
+              style={{ maxHeight: "520px" }}
+            />
+          </div>
+          <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+            <div className="bg-white rounded-xl p-4 shadow-sm border border-gray-100">
+              <p className="text-2xl font-bold text-solar-yellow">500+ MW</p>
+              <p className="text-sm text-gray-500 mt-1">Annual Capacity</p>
+            </div>
+            <div className="bg-white rounded-xl p-4 shadow-sm border border-gray-100">
+              <p className="text-2xl font-bold text-solar-yellow">28</p>
+              <p className="text-sm text-gray-500 mt-1">States Served</p>
+            </div>
+            <div className="bg-white rounded-xl p-4 shadow-sm border border-gray-100">
+              <p className="text-2xl font-bold text-solar-yellow">100%</p>
+              <p className="text-sm text-gray-500 mt-1">Quality Tested</p>
+            </div>
+            <div className="bg-white rounded-xl p-4 shadow-sm border border-gray-100">
+              <p className="text-2xl font-bold text-solar-yellow">20W–100W</p>
+              <p className="text-sm text-gray-500 mt-1">Product Range</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -131,36 +164,107 @@ export default function Manufacturing() {
         </div>
       </section>
 
-      {/* Quality Standards */}
-      <section className="py-16" style={{ backgroundColor: "#F4F6F8" }}>
+      {/* Storage Godown Section */}
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold text-navy mb-3">
-              Quality Certifications
-            </h2>
-            <p className="text-gray-500">
-              Every panel we produce meets the most stringent international and
-              national standards.
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl font-bold text-navy mb-4">
+                Storage Godown
+              </h2>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                Our large-capacity storage godown ensures ready stock of 20W to
+                100W solar panels for immediate dispatch. Organized in clearly
+                labelled bays by wattage, our warehouse supports rapid order
+                fulfillment across India.
+              </p>
+              <ul className="space-y-3 text-gray-600 text-sm">
+                <li className="flex items-start gap-2">
+                  <span className="text-solar-yellow font-bold mt-0.5">✓</span>
+                  <span>
+                    Large inventory maintained for all wattage variants (20W –
+                    100W)
+                  </span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-solar-yellow font-bold mt-0.5">✓</span>
+                  <span>
+                    Climate-controlled storage to maintain panel quality
+                  </span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-solar-yellow font-bold mt-0.5">✓</span>
+                  <span>
+                    Ready for same-day or next-day dispatch on bulk orders
+                  </span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-solar-yellow font-bold mt-0.5">✓</span>
+                  <span>Pan India logistics from our Nellore facility</span>
+                </li>
+              </ul>
+            </div>
+            <div className="rounded-2xl overflow-hidden shadow-2xl border border-gray-100">
+              <img
+                src="/assets/generated/storage-godown.dim_900x600.jpg"
+                alt="Kevitek Solar Storage Godown"
+                className="w-full object-cover"
+                style={{ maxHeight: "420px" }}
+              />
+            </div>
           </div>
-          <div className="flex flex-wrap justify-center gap-5">
-            {["ISO 9001:2015", "IEC 61215", "IEC 61730", "BIS Certified"].map(
-              (cert) => (
-                <div
-                  key={cert}
-                  className="bg-navy text-white rounded-xl px-8 py-5 text-center shadow-card"
-                >
-                  <div className="text-3xl mb-2">🏆</div>
-                  <div className="font-bold text-lg">{cert}</div>
-                </div>
-              ),
-            )}
+        </div>
+      </section>
+
+      {/* Packaging Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="rounded-2xl overflow-hidden shadow-2xl border border-gray-100 order-2 lg:order-1">
+              <img
+                src="/assets/generated/kevitek-packaging.dim_1200x800.jpg"
+                alt="Kevitek Solar Packaging"
+                className="w-full object-cover"
+                style={{ maxHeight: "420px" }}
+              />
+            </div>
+            <div className="order-1 lg:order-2">
+              <h2 className="text-3xl font-bold text-navy mb-4">
+                Packaging & Dispatch
+              </h2>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                Every Kevitek Solar panel is carefully packed in weatherproof,
+                shock-resistant packaging to ensure it reaches you in perfect
+                condition — whether it's a single panel or a bulk container
+                shipment.
+              </p>
+              <ul className="space-y-3 text-gray-600 text-sm">
+                <li className="flex items-start gap-2">
+                  <span className="text-solar-yellow font-bold mt-0.5">✓</span>
+                  <span>Multi-layer foam and cardboard protection</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-solar-yellow font-bold mt-0.5">✓</span>
+                  <span>
+                    Clearly labelled with wattage, serial number, and specs
+                  </span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-solar-yellow font-bold mt-0.5">✓</span>
+                  <span>Palletized for safe loading and transport</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-solar-yellow font-bold mt-0.5">✓</span>
+                  <span>Dispatch tracking provided for all bulk orders</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Technology */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-navy mb-3">
